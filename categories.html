@@ -50,15 +50,17 @@
                 <div class="popup__content">
                     <div class="popup__title">Authorization</div>
                     <div class="popup__inner inner-popup">
-                        <div class="inner-popup__image">
-                            <img src="img/icons/steam-icon.svg" alt="steam-icon">
-                        </div>
-                        <div class="inner-popup__content">
-                            <div class="inner-popup__label">Steam </div>
-                            <div class="inner-popup__text">
-                                <a href="" class="inner-popup__link">Авторизация</a> через Steam-аккаунт
-                            </div>
-                        </div>
+                        <a href="" class="inner-popup__click">
+                            <span class="inner-popup__image">
+                                <img src="img/icons/steam-icon.svg" alt="steam-icon">
+                            </span>
+                            <span class="inner-popup__content">
+                                <span class="inner-popup__label">Steam </span>
+                                <span class="inner-popup__text">
+                                    <span class="inner-popup__link">Авторизация</span> через Steam-аккаунт
+                                </span>
+                            </span>
+                        </a>
                     </div>
                     <div class="popup__btn-block">
                         <a href="#" class="inner-popup__close btn btn_small">Close</a>
@@ -351,7 +353,7 @@
                                     <div class="top-cards-categories__order order-top-cards-categories">
                                         <div class="order-top-cards-categories__text">Order by</div>
                                         <div class="order-top-cards-categories__items">
-                                            <div
+                                            <button
                                                 class="order-top-cards-categories__item item-order-top-cards-categories order-top-cards-categories__item_name">
                                                 <div class="item-order-top-cards-categories__arrows">
                                                     <div
@@ -364,8 +366,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="item-order-top-cards-categories__label">Name</div>
-                                            </div>
-                                            <div
+                                            </button>
+                                            <button
                                                 class="order-top-cards-categories__item item-order-top-cards-categories order-top-cards-categories__item_price">
                                                 <div class="item-order-top-cards-categories__arrows">
                                                     <div
@@ -378,8 +380,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="item-order-top-cards-categories__label">Price</div>
-                                            </div>
-                                            <div
+                                            </button>
+                                            <button
                                                 class="order-top-cards-categories__item item-order-top-cards-categories order-top-cards-categories__item_stock">
                                                 <div class="item-order-top-cards-categories__arrows">
                                                     <div
@@ -392,7 +394,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="item-order-top-cards-categories__label">Stock</div>
-                                            </div>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -895,7 +897,7 @@
                                         </label>
                                     </div>
                                     <div class="rare-select-product__item">
-                                        <input checked id="formElement2" autocomplete='off' type='radio' value="element"
+                                        <input id="formElement2" autocomplete='off' type='radio' value="element"
                                             name='form[]' class='rare-select-product__input'>
                                         <label for="formElement2"
                                             class="rare-select-product__label label-rare-select-product">

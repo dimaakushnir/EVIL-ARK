@@ -1227,6 +1227,27 @@ body.product-select::after {
     margin: 0 0 25px 0;
   }
 }
+.popup-authorization .inner-popup .inner-popup__content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  flex-direction: column;
+}
+.popup-authorization .inner-popup__click {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  align-items: center;
+}
+.popup-authorization .inner-popup__click:hover .inner-popup__link {
+  text-decoration: none;
+}
 .popup-authorization .popup__title:not(:last-child) {
   margin: 0 0 38px 0;
 }
@@ -1396,9 +1417,6 @@ body.product-select::after {
   -ms-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
-.inner-popup__link:hover {
-  text-decoration: none;
 }
 .inner-popup__payment {
   width: 100%;
@@ -2965,6 +2983,12 @@ body.product-select::after {
   font-size: 0;
   align-items: center;
 }
+.menu-panel-categories__link:hover span:first-child {
+  background: linear-gradient(0deg, rgba(8, 28, 54, 0.4), rgba(8, 28, 54, 0.4));
+}
+.menu-panel-categories__link:hover span:last-child {
+  text-decoration: underline;
+}
 .menu-panel-categories__link span:first-child {
   display: -webkit-box;
   display: -moz-box;
@@ -2988,9 +3012,6 @@ body.product-select::after {
   transition: all 0.3s ease 0s;
   margin: 0 9px 0 0;
 }
-.menu-panel-categories__link span:first-child:hover {
-  background: linear-gradient(0deg, rgba(8, 28, 54, 0.4), rgba(8, 28, 54, 0.4));
-}
 .menu-panel-categories__link span:first-child img {
   width: 15px;
   height: 15px;
@@ -3009,9 +3030,6 @@ body.product-select::after {
   -ms-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
-.menu-panel-categories__link span:last-child:hover {
-  text-decoration: underline;
 }
 @media (max-width: 420px) {
   .menu-panel-categories__link span:last-child {
@@ -3592,7 +3610,7 @@ body.product-select::after {
   margin: 0 0 20px 0;
 }
 .filter-top-cards-categories__input::placeholder {
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.6);
 }
 @media (max-width: 479.98px) {
   .filter-top-cards-categories__input {
@@ -3634,11 +3652,15 @@ body.product-select::after {
   color: #FFFFFF;
   position: relative;
   z-index: 1;
+  cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+.filter-top-cards-categories__link:hover {
+  border: 1px solid rgba(255, 255, 255, 0.7568627451);
 }
 .filter-top-cards-categories__link::before {
   position: absolute;
@@ -4904,12 +4926,20 @@ body.product-select::after {
     margin: 0 0 12px 8px;
   }
 }
+.rare-select-product__item:not(:last-child) {
+  margin: 0 0 3px 0;
+}
 .rare-select-product__input {
   display: none;
 }
 .rare-select-product__input:checked + .label-rare-select-product {
   border: 1px solid rgba(255, 108, 61, 0.6);
-  background: linear-gradient(0deg, rgba(255, 108, 61, 0.3), rgba(255, 108, 61, 0.3));
+  background: #4F2D2F;
+  -webkit-transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -ms-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
 }
 .label-rare-select-product {
   display: -webkit-inline-flex;
@@ -4920,10 +4950,18 @@ body.product-select::after {
   padding: 6.5px 13px 6.5px 8px;
   border-radius: 150px;
   border: 1px solid transparent;
-  background: linear-gradient(0deg, rgba(255, 108, 61, 0), rgba(255, 108, 61, 0));
   cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   padding: 6.5px 11.5px 6.5px 8px;
   cursor: pointer;
+}
+.label-rare-select-product:hover {
+  border: 1px solid rgba(255, 108, 61, 0.3);
+  background: rgba(79, 45, 47, 0.6);
 }
 @media (max-width: 767.98px) {
   .label-rare-select-product {
