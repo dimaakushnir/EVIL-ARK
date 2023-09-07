@@ -5788,6 +5788,10 @@ body.product-select::after {
   }
 }
 
+.filter-roulette {
+  position: relative;
+  z-index: 1;
+}
 .filter-roulette__menu:not(:last-child) {
   margin: 0 0 35px 0;
 }
