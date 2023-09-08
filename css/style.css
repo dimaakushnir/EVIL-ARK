@@ -1967,6 +1967,133 @@ body.product-select::after {
   height: 100%;
   object-fit: cover;
 }
+.inner__row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+}
+.inner__menu {
+  flex: 0 0 385px;
+  margin: 0 20px 0 0;
+}
+.inner__content {
+  flex: 1 1 100%;
+}
+
+.menu-inner {
+  border-radius: 30px;
+  border: 1px solid #2C4463;
+  background-color: rgba(8, 28, 54, 0.7);
+  padding: 40px 30px;
+}
+.menu-inner__item:not(:last-child) {
+  margin: 0 0 12px 0;
+}
+.menu-inner__item.active .link-menu-inner__image {
+  background: linear-gradient(157.23deg, rgba(255, 108, 61, 0.72) 2.08%, rgba(255, 108, 61, 0) 95.64%);
+}
+.menu-inner__item.active .link-menu-inner__image svg {
+  fill: #FF6C3D;
+}
+.menu-inner__item.active .link-menu-inner__text {
+  color: #FF6C3D;
+}
+.link-menu-inner {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  align-items: center;
+}
+.link-menu-inner:hover .link-menu-inner__image {
+  background: linear-gradient(157.23deg, rgb(253, 145, 108) 2.08%, rgba(255, 108, 61, 0) 95.64%);
+}
+.link-menu-inner:hover .link-menu-inner__image svg {
+  fill: rgb(253, 145, 108);
+}
+.link-menu-inner:hover .link-menu-inner__text {
+  color: #fd916c;
+}
+.link-menu-inner__image {
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(157.23deg, rgba(255, 255, 255, 0.64) 2.08%, rgba(255, 255, 255, 0) 95.64%);
+  position: relative;
+  margin: 0 14px 0 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.link-menu-inner__image::before {
+  position: absolute;
+  content: "";
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #081C36;
+}
+.link-menu-inner__image svg {
+  position: relative;
+  fill: #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.link-menu-inner__image_profile svg {
+  width: 18px;
+  height: 18px;
+}
+.link-menu-inner__image_bonuses svg {
+  width: 18px;
+  height: 18px;
+}
+.link-menu-inner__image_cart svg {
+  width: 20px;
+  height: 18px;
+}
+.link-menu-inner__image_settings svg {
+  width: 22px;
+  height: 22px;
+}
+.link-menu-inner__text {
+  font-size: 18px;
+  line-height: 122.2222222222%;
+  color: #FFFFFF;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.content-inner {
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  padding: 30px;
+}
 .ibg {
   background-position: center;
   background-size: cover;
@@ -6361,6 +6488,22 @@ body.product-select::after {
   width: 100%;
   height: 100%;
 }
+.item-games-filter-roulette__image::before {
+  display: none;
+  position: absolute;
+  content: "Lot name";
+  width: 90%;
+  height: 48px;
+  left: 5%;
+  bottom: 10px;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 137.5%;
+  color: #FFFFFF;
+  bottom: 10px;
+}
 .item-games-filter-roulette__name {
   position: absolute;
   bottom: 10px;
@@ -6377,12 +6520,25 @@ body.product-select::after {
   padding: 13px;
   border-radius: 11px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.2);
   font-size: 16px;
   font-weight: 500;
   line-height: 137.5%;
   color: #FFFFFF;
-  backdrop-filter: blur(1.5px);
+}
+.item-games-filter-roulette__name::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 11px;
+  filter: blur(45px);
+}
+.item-games-filter-roulette__name span {
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 991.98px) {
   .item-games-filter-roulette__name {
@@ -6726,6 +6882,90 @@ body.product-select::after {
 @media (max-width: 479.98px) {
   .history-user-page__column {
     margin: 0 0 15px 0;
+  }
+}
+.profile {
+  position: relative;
+}
+.profile::before {
+  position: absolute;
+  content: "";
+  width: 655px;
+  height: 655px;
+  border-radius: 50%;
+  top: -54px;
+  right: -111px;
+  background: rgba(0, 55, 128, 0.8);
+  filter: blur(250px);
+  pointer-events: none;
+}
+@media (min-width: 991.98px) {
+  .profile::before {
+    animation: circle 5s linear infinite;
+  }
+}
+@media (max-width: 479.98px) {
+  .profile::before {
+    filter: blur(350px);
+  }
+}
+.profile__main {
+  margin: 0 0 0 165px;
+  padding: 100px 0 80px 0;
+}
+@media (max-width: 1700px) {
+  .profile__main {
+    padding: 90px 0 73px 0;
+  }
+}
+@media (max-width: 1550px) {
+  .profile__main {
+    margin: 0 0 0 135px;
+    padding: 80px 0 67.5px 0;
+  }
+}
+@media (max-width: 1500px) {
+  .profile__main {
+    margin: 0 0 0 122px;
+    padding: 70px 0 62px 0;
+  }
+}
+@media (max-width: 1200px) {
+  .profile__main {
+    padding: 60px 0 56.5px 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .profile__main {
+    margin: 0;
+    padding: 50px 0 51px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .profile__main {
+    padding: 40px 0 45.5px 0;
+  }
+}
+@media (max-width: 479.98px) {
+  .profile__main {
+    padding: 30px 0 40px 0;
+  }
+}
+.profile__body {
+  position: relative;
+  z-index: 25;
+}
+.profile__title:not(:last-child) {
+  margin: 0 0 35px 0;
+}
+@media (max-width: 1200px) {
+  .profile__title:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 479.98px) {
+  .profile__title:not(:last-child) {
+    margin: 0 0 25px 0;
   }
 }
 .home {
