@@ -6212,10 +6212,12 @@ body.product-select::after {
   border: 1px solid rgba(255, 255, 255, 0.4);
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
   padding: 20px;
+  margin: 0 0 30px 0;
 }
 @media (max-width: 1200px) {
   .games-filter-roulette__slider {
     padding: 15px;
+    margin: 0 0 25px 0;
   }
 }
 @media (max-width: 479.98px) {
@@ -6223,6 +6225,7 @@ body.product-select::after {
     width: 140%;
     transform: translate(-16%, 0);
     border-radius: 0;
+    margin: 0 0 20px 0;
   }
 }
 .title-games-filter-roulette {
