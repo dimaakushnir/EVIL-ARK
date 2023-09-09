@@ -7680,7 +7680,7 @@ body.product-select::after {
 .progress-discount-bonuses::before {
   position: absolute;
   content: "";
-  width: 27%;
+  width: 28%;
   height: 6px;
   border-radius: 120px 0 0 120px;
   top: 0;
@@ -7732,6 +7732,7 @@ body.product-select::after {
   border: 4px solid #EB5D30;
   top: -4px;
   left: 27%;
+  z-index: 1;
 }
 .progress-discount-bonuses__point::before {
   position: absolute;
