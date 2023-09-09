@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <title>Profile</title>
+    <title>My purchases</title>
 </head>
 
 <body>
@@ -192,17 +192,18 @@
                 </li>
             </ul>
         </div>
-        <main class="profile">
-            <section class="profile__main">
-                <div class="profile__container container">
-                    <div class="profile__body">
-                        <h2 class="profile__title title-h2">Profile</h2>
-                        <div class="profile__inner inner">
+        <main class="purchases">
+            <section class="purchases__main">
+                <div class="purchases__container container">
+                    <div class="purchases__body">
+                        <h2 class="purchases__title title-h2">my purchases</h2>
+                        <div class="purchases__inner inner">
                             <div class="inner__row">
                                 <div class="inner__menu menu-inner">
                                     <div class="menu-inner__dropdown dropdown-menu-inner">
                                         <button class='dropdown-menu-inner__button menu-inner__item'>
-                                            <a href="" class="menu-inner__link link-menu-inner active">
+                                            <a href="profile.html" class="menu-inner__link link-menu-inner"
+                                                data-da="dropdown-menu-inner__list-item_purchases, 0, 1100">
                                                 <span class="link-menu-inner__image link-menu-inner__image_profile">
                                                     <svg class="delivery__arrow">
                                                         <use xlink:href="#profile"></use>
@@ -222,8 +223,10 @@
                                                     <span class="link-menu-inner__text">My bonuses</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-menu-inner__list-item menu-inner__item">
-                                                <a href="purchases.html" class="menu-inner__link link-menu-inner">
+                                            <li
+                                                class="dropdown-menu-inner__list-item dropdown-menu-inner__list-item_purchases menu-inner__item">
+                                                <a href="" class="menu-inner__link link-menu-inner active"
+                                                    data-da="dropdown-menu-inner__button, 0, 1100">
                                                     <span class="link-menu-inner__image link-menu-inner__image_cart">
                                                         <svg class="delivery__arrow">
                                                             <use xlink:href="#cart"></use>
@@ -248,24 +251,217 @@
                                 </div>
                                 <div class="inner__content content-inner">
                                     <div class="content-inner__body">
-                                        <div class="profile__row">
-                                            <div class="profile__user user-profile">
-                                                <div class="user-profile__image">
-                                                    <img src="img/categories/user-icon.svg" alt="user-icon.svg">
+                                        <div class="purchases__items">
+                                            <div class="purchases__row">
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="user-profile__body">
-                                                    <div class="user-profile__name">User nickname</div>
-                                                    <div class="user-profile__level" data-da="info-profile, 2, 600">
-                                                        Level: <span>Newbie</span></div>
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="profile__info info-profile">
-                                                <div class="info-profile__id" data-da="user-profile__body, 2, 600">
-                                                    SteamID: <span>2348769256795234</span>
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="info-profile__balance balance-info-profile">
-                                                    <div class="balance-info-profile__text">Balance:</div>
-                                                    <div class="balance-info-profile__value">120 EC</div>
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="purchases__column">
+                                                    <div class="purchases__item item-purchases">
+                                                        <div class="item-purchases__image-block">
+                                                            <div class="item-purchases__image ibg">
+                                                                <img src="img/purchases/01.svg" alt="PvP Simple Kit">
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-purchases__name">PvP Simple Kit</div>
+                                                        <div class="item-purchases__bottom">
+                                                            <div class="item-purchases__number">X<span>1</span></div>
+                                                            <div class="item-purchases__line"></div>
+                                                            <div class="item-purchases__price">60 EC</div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
