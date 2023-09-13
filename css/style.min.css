@@ -7677,7 +7677,7 @@ body.product-select::after {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 2px solid rgba(4, 198, 0, 0.4);
+  border: 2px solid;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
   margin: 0 20px 0 0;
 }
@@ -7728,6 +7728,15 @@ body.product-select::after {
     width: 39px;
     height: 39px;
   }
+}
+.user-profile__image.green {
+  border-color: rgba(4, 198, 0, 0.4);
+}
+.user-profile__image.yellow {
+  border-color: yellow;
+}
+.user-profile__image.blue {
+  border-color: blue;
 }
 .user-profile__name {
   font-size: 18px;
