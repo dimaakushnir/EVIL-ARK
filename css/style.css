@@ -6326,9 +6326,40 @@ body.product-select::after {
     flex: 0 1 50%;
   }
 }
+@media (max-width: 991.98px) {
+  .characteristics-select-product_no-authorization .characteristics-select-product__column {
+    flex: 0 1 68%;
+  }
+}
 @media (max-width: 600px) {
   .characteristics-select-product_no-authorization .characteristics-select-product__column {
     flex: 1 1 100%;
+  }
+}
+.characteristics-select-product_no-authorization .characteristics-select-product__column_quatity {
+  flex: 0 1 20%;
+}
+@media (max-width: 1300px) {
+  .characteristics-select-product_no-authorization .characteristics-select-product__column_quatity {
+    flex: 0 1 35%;
+  }
+}
+@media (max-width: 991.98px) {
+  .characteristics-select-product_no-authorization .characteristics-select-product__column_quatity {
+    flex: 0 1 68%;
+  }
+}
+.characteristics-select-product_no-authorization .characteristics-select-product__column_price {
+  flex: 0 1 10%;
+}
+@media (max-width: 1300px) {
+  .characteristics-select-product_no-authorization .characteristics-select-product__column_price {
+    flex: 0 1 15%;
+  }
+}
+@media (max-width: 991.98px) {
+  .characteristics-select-product_no-authorization .characteristics-select-product__column_price {
+    flex: 0 1 30%;
   }
 }
 @media (max-width: 479.98px) {
@@ -6368,14 +6399,9 @@ body.product-select::after {
   }
 }
 .characteristics-select-product__row {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  font-size: 0;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
   margin: 0 -12.5px 0 -12.5px;
 }
 .characteristics-select-product__column {
@@ -6459,6 +6485,32 @@ body.product-select::after {
   right: 20px;
   cursor: pointer;
   background-color: transparent;
+}
+.characteristics-select-product__price {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  align-items: center;
+  height: 53px;
+  font-size: 18px;
+  line-height: 138.8888888889%;
+  white-space: nowrap;
+  color: #DFDFDF;
+}
+@media (max-width: 1200px) {
+  .characteristics-select-product__price {
+    height: 49px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 479.98px) {
+  .characteristics-select-product__price {
+    height: 44px;
+    font-size: 16px;
+  }
 }
 
 .bottom-select-product_no-authorization {
